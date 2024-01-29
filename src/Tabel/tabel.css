@@ -1,0 +1,291 @@
+/* PrimerTabele.css */
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.topDiv {
+  display: flex;
+  width: 100%;
+  height: 17vh;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.ha1 {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(23, 70, 146);
+}
+
+.topleftdiv {
+  width: 70%;
+  height: 90%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.statuslicence {
+  border: 3px solid rgb(23, 70, 146);
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxovi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.box1 {
+  margin: 0px 5px;
+}
+
+label {
+  margin: 0 5px; /* Adjust as needed */
+  display: flex;
+  font-size: 15px;
+  white-space: nowrap; /* Prevent label text from wrapping */
+}
+.input {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-right: 5px;
+}
+
+.inp {
+  width: 100%;
+  height: 35%;
+  margin: 0;
+}
+
+.removebtn {
+  width: 40px;
+  height: 35%;
+  border: none;
+  background-color: rgb(57, 56, 56);
+  border-radius: 3px;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.toprightdiv {
+  width: 55%;
+  justify-content: end;
+  display: flex;
+  gap: 5px;
+  padding-right: 10px;
+}
+
+.btn2 {
+  border: none;
+  background-color: rgb(122, 143, 150);
+  color: white;
+  white-space: nowrap;
+  height: 40px;
+  width: 150px;
+  border-radius: 3px;
+}
+
+table {
+  height: auto;
+  border-spacing: 0;
+  width: 90%;
+}
+table td,table th{
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 13px;
+}
+thead tr {
+  background-color: rgb(229, 229, 229);
+  border: 21px solid black;
+}
+
+table, tbody,tr:nth-child(even){
+background-color: #f5f5f5;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  border: 0.1px solid rgb(224, 223, 223);
+}
+
+/* Remove the border-bottom for the last child of th and td */
+
+.pagination {
+  display: flex;
+  margin: 20px 0px 20px 0px;
+  gap: 5px;
+  height: 35px;
+}
+
+.arrow {
+  width: 40px;
+  border: none;
+  background-color: rgb(68, 67, 67);
+  border-radius: 3px;
+}
+
+.btn3 {
+  width: 40px;
+  border: none;
+}
+
+@media(max-width:1000px){
+  .topleftdiv{
+    flex-direction: column;
+  }
+  .topDiv{
+    height: 22vh;
+  }
+  .statuslicence{
+    height: 70%;
+  }
+  .input{
+    height: auto;
+    width: 100%;
+  }
+  .inp{
+    padding: 15px 20px;
+    
+  }
+  .removebtn{
+    height: 30px;
+  }
+}
+@media (max-width: 700px) {
+  table {
+    width: 100%; /* Make the table take up the full width */
+  }
+  .topDiv{
+    flex-direction: column;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block; /* Change the display to block for stacking cells vertically */
+  }
+  table{
+    margin-top: 20px;
+  }
+
+  th, td {
+    width: 100%; /* Make each cell take up the full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+
+  /* Hide table headers (th) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    /* Optionally add some styling to space out the cells */
+    border: none;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%; /* Adjust as needed */
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+    position: relative;
+  }
+   .box input{
+    background-color: red;
+  }
+  .box{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topDiv{
+    display: flex;
+    flex-direction: column !important;
+    height: 25vh;
+  }
+  .topleftdiv{
+    flex-direction: column;
+    width: 100%;
+  }
+  .statuslicence{
+    height: 60%;
+  }
+  .input{
+    width: 100%;
+  }
+  .inp{
+    height: 35px;
+  }
+  .removebtn{
+    height: 35px;
+  }
+  .toprightdiv{
+    align-items: center;
+    justify-content: center;
+  }
+  /* .topleftdiv{
+    width: 100%;
+    flex-direction: column;
+  } */
+  /* .removebtn{
+    height: 30px;
+  }
+  .topDiv{
+    height: 25vh;
+  }
+  .statuslicence{
+    height: 70%;
+  }
+  .input{
+    width: 100%;
+  }
+  .inp{
+    width: 90%;
+    height: 30px;
+  }
+  .toprightdiv{
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  } */
+}
