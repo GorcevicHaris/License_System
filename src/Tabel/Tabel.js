@@ -736,6 +736,7 @@ const Tabel = () => {
               ) : (
                 ""
               )}
+              {/*  */}
               <td data-label="Datum izdavanja">{el.datumizdavanja}</td>
               <td data-label="Datum isteka">{el.datumizdavanja}</td>
               {/*  */}
